@@ -45,7 +45,7 @@ describe("Pikachu", function() {
 
     it("must return a dead picture when is dead", function() {
         // When
-        pikachu.happiness = 0;
+        pikachu.isDead = true;
 
         // Then
         expect(pikachu.getPicture()).toBe(deadPicture);
